@@ -1,40 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | Profile card component</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">pimoux</a>.
-  </div>
+
+<body class="flex justify-center items-center h-full z-0 overflow-hidden">
+    <img id="top" src="images/bg-pattern-top.svg" alt="" class="absolute" />
+    <div id="card" class="rounded-2xl flex flex-col z-10 bg-white items-center overflow-hidden">
+        <img src="images/bg-pattern-card.svg" alt="" class="rounded-t-2xl" />
+        <span id="victorContainer" class="relative bottom-13">
+            <img id="victor" src="images/image-victor.jpg" class="rounded-full h-26 w-26 z-20" alt="victor" />
+        </span>
+        <p class="relative bottom-8">Victor Crest &nbsp;<span>26</span></p>
+        <span id="london" class="relative bottom-7">London</span>
+        <hr class="relative bottom-2" />
+        <div class="flex justify-evenly items-center h-full w-full mb-1.5">
+            <div class="flex flex-col justify-center items-center stat">
+                <p>80K</p>
+                <p>Followers</p>
+            </div>
+            <div class="flex flex-col justify-center items-center stat">
+                <p class="mr-2">803K</p>
+                <p class="mr-2">Likes</p>
+            </div>
+            <div class="flex flex-col justify-center items-center stat">
+                <p class="mr-2">1.4K</p>
+                <p class="mr-2">Photos</p>
+            </div>
+        </div>
+    </div>
+    <img id="bottom" src="images/bg-pattern-bottom.svg" alt="" class="absolute" />
 </body>
+
 </html>
-
-<!--
-
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-
--->

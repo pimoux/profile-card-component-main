@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*
+{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(185, 75%, 39%);
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 600px) {
+    #top{
+        bottom: 18rem;
+        left: -12.5rem;
+    }
+    
+    #bottom{
+        top: 24.5rem;
+        right: -9.5rem;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 599px) {
+    #top{
+        bottom: 24rem;
+        left: -11rem;
+    }
+    
+    #bottom{
+        top: 18rem;
+        right: -14rem;
+    }
+}
+
+#card{
+    width: 350px;
+    height: 375px;
+    -webkit-box-shadow: 10px 30px 60px -7px rgba(0,0,0,0.2); 
+    box-shadow: 10px 30px 60px -7px rgba(0,0,0,0.2);
+}
+
+#victor{
+    border-width: 5px;
+    border-color: white;
+}
+
+#victorContainer{
+    bottom: 3.25rem;
+}
+
+p{
+    font-weight: 800;
+    color: hsl(229, 23%, 23%)
+}
+
+p, span{
+    font-size: 18px;
+    font-family: Kumbh Sans;
+}
+
+p > span{
+    font-weight: 400;
+    color: hsl(227, 10%, 46%)
+}
+
+#card #london{
+    color: hsl(227, 10%, 46%);
+    font-size: 14px;
+}
+
+#card hr{
+    width: inherit;
+    height: 1px;
+    border-color: hsl(0, 0%, 59%);
+}
+
+.stat p:first-child{
+    font-weight: 700;
+}
+.stat p:last-child{
+    font-weight: 400;
+    font-size: 10px;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1.5px;
+}
